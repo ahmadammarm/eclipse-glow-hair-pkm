@@ -112,7 +112,7 @@ header {
 
 @media screen and (max-width: 990px) {
     .menu-bar {
-        display: block;
+        display: inline-block;
     }
 
     .navbar .box-navbar .menu {
@@ -125,30 +125,23 @@ header {
         align-items: center;
         top: 70px;
         right: 50%;
-        transform: translateX(50%);
-        -webkit-transform: translateX(50%);
-        -moz-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-        -o-transform: translateX(50%);
         opacity: 0;
-        transition: all .3s ease;
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -o-transition: all .3s ease;
+        transform: translateX(50%);
+        transition: all 0.3s ease;
         background-color: #9B7653;
-
     }
 
     .navbar .box-navbar .menu.menu-active {
         top: 80px;
-        opacity: 1;
         border-top: 1px solid #fff;
+        opacity: 1;
     }
 
-    .hero .box-hero .box:nth-child(1) p{
+    .hero .box-hero .box:nth-child(1) p {
         font-size: 13px;
     }
 }
+
 
 .loader {
   display: flex;
