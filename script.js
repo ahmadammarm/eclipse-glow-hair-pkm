@@ -2,6 +2,24 @@ const menuBar = document.querySelector(".menu-bar");
 const menuNav = document.querySelector(".menu");
 const navBar = document.querySelector(".navbar");
 
+// Scrolling tidak ada ketika loading
+// Hide scrollbars
+document.documentElement.style.overflow = "hidden";
+
+// Function to hide loading screen and show content
+function hideLoadingScreenAndShowContent() {
+  // Your existing code to hide the loading screen
+
+  // Show scrollbars again
+  document.documentElement.style.overflow = "visible";
+}
+
+// Wait for content to load and then call the function
+window.addEventListener("load", function () {
+  setTimeout(hideLoadingScreenAndShowContent, 5000);
+});
+
+
 // Loading
 window.addEventListener("load", function () {
     setTimeout(function () {
@@ -9,8 +27,10 @@ window.addEventListener("load", function () {
       aosElements.forEach(function (element) {
         element.classList.add("aos-animate");
       });
+      
     }, 5000); // Menjalankan setelah 5 detik (5000 ms)
   });
+
 
 menuBar.addEventListener('click', () => {
     menuNav.classList.toggle('menu-active');
