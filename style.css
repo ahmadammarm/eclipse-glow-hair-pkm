@@ -47,7 +47,6 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0,0,0,0.87)), url("img/home.jpeg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
