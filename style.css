@@ -142,7 +142,6 @@ header {
     }
 }
 
-
 .loader {
   display: flex;
   justify-content: center;
@@ -307,7 +306,7 @@ header {
 }
 
 .about .row .about-img img {
-  width: 70%;
+  width: 65%;
   height: 90%;
   border-radius: 1rem;
 }
@@ -366,4 +365,42 @@ header {
         margin-top: 1rem;
         font-size: 2rem;
     }
+}
+
+/* Services CSS */
+.services {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(8, 8, 8);
+    padding: 100px 0 50px 0;
+}
+
+.services .box-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 50px;
+}
+
+.services .box-services .box {
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px #9B7653;
+    color: #fff;
+    padding: 20px; /* Tambahkan nilai padding sesuai preferensi Anda */
+    transition: all .3s ease;
+}
+
+
+.services .box-services .box i{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #9B7653;
+}
+
+.services .box-services .box p {
+    font-weight: 100;
+
 }
