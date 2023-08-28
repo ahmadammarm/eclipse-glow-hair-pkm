@@ -64,6 +64,10 @@ header {
     padding: 20px 0 20px 0;
 }
 
+.navbar.scrolling-active .box-navbar .menu li a:hover {
+    color: #000;
+}
+
 .navbar .box-navbar {
     display: flex;
     justify-content: space-between;
@@ -402,5 +406,7 @@ header {
 
 .services .box-services .box p {
     font-weight: 100;
-
+    margin-top: 5px;
 }
+
+
