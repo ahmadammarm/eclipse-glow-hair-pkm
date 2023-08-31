@@ -102,3 +102,22 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("active");
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuCards = document.querySelectorAll(".menu-card");
+  const popup = document.getElementById("popup");
+  const closePopup = document.getElementById("close-popup");
+
+  menuCards.forEach((card) => {
+    card.addEventListener("click", (event) => {
+      const productName = card.querySelector(".menu-card-title").textContent;
+
+      popup.querySelector("#popup-title").textContent = productName;
+      popup.classList.add("active");
+    });
+  });
+
+  closePopup.addEventListener("click", () => {
+    popup.classList.remove("active");
+  });
+});

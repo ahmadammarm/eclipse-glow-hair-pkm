@@ -509,14 +509,101 @@ header {
   width: 50%;
   margin-bottom: 1rem;
   transition: 1s ease all;
+  cursor: pointer;
 }
 
 .menu .row .menu-card img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   z-index: 2;
 }
 
 .menu .row .menu-card-title {
   margin: 1rem auto 0.5rem;
   color: var(--primary);
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  
+}
+
+#popup.active {
+  display: flex;
+  transition: all .3s ease;
+}
+
+#popup-content {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 90%;
+}
+
+#close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup-card {
+  margin-top: 20px;
+}
+
+#popup-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#shopee-link {
+  display: inline-block;
+  background-color: #9b7653;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+#shopee-link:hover {
+  background-color: #7e5c3e;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  #popup-content {
+    padding: 10px;
+  }
+
+  #shopee-link {
+    padding: 8px 15px;
+  }
+
+  #close-popup {
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+  }
+
+  .popup-card {
+    margin-top: 10px;
+  }
+
+  #popup-title {
+    font-size: 1.2rem;
+  }
 }
