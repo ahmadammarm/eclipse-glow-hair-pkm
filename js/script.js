@@ -104,12 +104,13 @@ window.addEventListener("scroll", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const menuCards = document.querySelectorAll(".menu-card");
+  const menuCardImgs = document.querySelectorAll(".menu-card-img");
   const popup = document.getElementById("popup");
   const closePopup = document.getElementById("close-popup");
 
-  menuCards.forEach((card) => {
-    card.addEventListener("click", (event) => {
+  menuCardImgs.forEach((img) => {
+    img.addEventListener("click", (event) => {
+      const card = img.closest(".menu-card");
       const productName = card.querySelector(".menu-card-title").textContent;
 
       popup.querySelector("#popup-title").textContent = productName;
