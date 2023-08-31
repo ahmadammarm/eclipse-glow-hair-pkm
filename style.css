@@ -464,3 +464,59 @@ header {
   border: 4px solid #634a32;
   color: #634a32;
 }
+
+
+
+/* Menu Section */
+
+.menu h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.menu p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.menu h4 {
+  text-align: center;
+  max-width: 40rem;
+  margin: auto;
+  font-size: 1.5rem;
+  font-style: oblique;
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+  font-size: medium;
+  transition: 1s;
+}
+
+.menu .row .menu-card img {
+  border-radius: 50%;
+  width: 50%;
+  margin-bottom: 1rem;
+  transition: 1s ease all;
+}
+
+.menu .row .menu-card img:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.menu .row .menu-card-title {
+  margin: 1rem auto 0.5rem;
+  color: var(--primary);
+}
