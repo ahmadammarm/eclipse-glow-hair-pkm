@@ -121,5 +121,6 @@ document.addEventListener("DOMContentLoaded", function () {
   closePopup.addEventListener("click", () => {
     popup.classList.remove("active");
   });
-  
 });
+
+
