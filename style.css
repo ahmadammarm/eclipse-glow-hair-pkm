@@ -780,3 +780,94 @@ header {
     margin: 0 10px;
   }
 }
+
+/* CSS untuk kontainer tim */
+.team-container {
+  text-align: center; /* Pusatkan konten horizontal */
+  display: flex;
+  justify-content: center; /* Pusatkan konten vertikal */
+  align-items: center; /* Pusatkan konten vertikal */
+  flex-direction: column; /* Menyusun elemen dalam kolom */
+}
+
+/* CSS untuk judul tim */
+.team-container .team-title h2 {
+  font-size: 3rem; /* Ubah ukuran font judul */
+  color: #333; /* Ubah warna teks judul */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan teks */
+  padding-bottom: 4rem;
+}
+
+/* CSS untuk elemen tim */
+.team-container .team-item {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  background-color: #ccc; /* Warna latar belakang */
+  padding: 20px; /* Tambahkan padding untuk ruang putih */
+  border-radius: 10px; /* Tambahkan sudut melengkung */
+  margin-bottom: 1rem;
+  cursor: default;
+}
+
+
+
+/* CSS untuk gambar */
+.team-container .team-item .team-item-inner img {
+  max-width: 200px; /* Ubah ukuran gambar sesuai kebutuhan */
+  height: auto;
+  box-shadow: 0 0 10px #ccc;
+  margin-top: 40px;
+  transition: all .5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan */
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+}
+
+.team-container .team-item .team-item-inner img:hover {
+  transform: scale(1.1);
+}
+
+.team-container .team-item .team-item-inner {
+  padding: 15px;
+}
+
+.team-container .team-item .team-item-inner h4 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  margin: 20px 0 5px;
+}
+.team-container .team-item .team-item-inner p {
+  color: #555;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.team-container .team-item .team-item-inner .social-icons {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.team-container .team-item .team-item-inner .social-icons a {
+  display: inline-block;
+  margin: 0 3px;
+  text-decoration: none;
+}
+
+.team-container .team-item .team-item-inner .social-icons a i {
+  height: 32px;
+  width: 32px;
+  border: 1px solid #634a32;
+  display: block;
+  text-align: center;
+  line-height: 32px;
+  color: #634a32;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.team-container .team-item .team-item-inner .social-icons a:hover i {
+  color: #fff; /* Ubah warna ikon menjadi putih saat dihover */
+  background-color: #634a32; /* Ubah warna latar belakang ikon saat dihover */
+  border-color: #634a32; /* Ubah warna border ikon saat dihover */
+}
