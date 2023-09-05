@@ -15,6 +15,16 @@ html {
   overflow: hidden;
 }
 
+h2,
+h3,
+h4 {
+  cursor: default;
+}
+
+p {
+  cursor: default;
+}
+
 /* Gaya scrollbar */
 body::-webkit-scrollbar {
   width: 12px;
@@ -121,7 +131,7 @@ header {
     position: absolute;
     flex-direction: column;
     width: 100%;
-    height: 250px;
+    height: 270px;
     row-gap: 20px;
     justify-content: center;
     align-items: center;
@@ -196,6 +206,7 @@ header {
   font-size: 3vw;
   line-height: 1.3;
   margin-bottom: 20px;
+  cursor: default;
 }
 
 .hero .box-hero .box:nth-child(1) p {
@@ -204,6 +215,7 @@ header {
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 18px;
+  cursor: default;
 }
 
 .hero .box-hero .box:nth-child(1) button {
@@ -317,6 +329,7 @@ header {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: #634a32;
+  cursor: default;
 }
 
 .about .row .content p {
@@ -391,6 +404,7 @@ header {
   color: #fff;
   padding: 20px; /* Tambahkan nilai padding sesuai preferensi Anda */
   transition: all 0.3s ease;
+  cursor: default;
 }
 
 .services .box-services .box i {
@@ -491,6 +505,7 @@ header {
   margin: auto;
   font-size: 1.5rem;
   font-style: oblique;
+  cursor: default;
 }
 
 .menu .row {
@@ -781,80 +796,80 @@ header {
   }
 }
 
-/* CSS untuk kontainer tim */
-.team-container {
-  text-align: center; /* Pusatkan konten horizontal */
-  display: flex;
-  justify-content: center; /* Pusatkan konten vertikal */
-  align-items: center; /* Pusatkan konten vertikal */
-  flex-direction: column; /* Menyusun elemen dalam kolom */
-}
 
-/* CSS untuk judul tim */
-.team-container .team-title h2 {
-  font-size: 3rem; /* Ubah ukuran font judul */
-  color: #333; /* Ubah warna teks judul */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan teks */
-  padding-bottom: 4rem;
-}
 
-/* CSS untuk elemen tim */
-.team-container .team-item {
-  display: flex;
-  align-items: center;
-  margin-top: 25px;
-  background-color: #ccc; /* Warna latar belakang */
-  padding: 20px; /* Tambahkan padding untuk ruang putih */
-  border-radius: 10px; /* Tambahkan sudut melengkung */
-  margin-bottom: 1rem;
+/* Team CSS */
+.team-section {
+  padding: 80px 0 80px;
+}
+.team-section .team-container {
+  margin: auto;
+}
+.team-section .team-container .team-title-inner h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 6rem;
+  padding-top: 2rem;
   cursor: default;
 }
-
-
-
-/* CSS untuk gambar */
-.team-container .team-item .team-item-inner img {
-  max-width: 200px; /* Ubah ukuran gambar sesuai kebutuhan */
-  height: auto;
-  box-shadow: 0 0 10px #ccc;
-  margin-top: 40px;
-  transition: all .5s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan */
-  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+.team-section .team-container .team-row {
+  display: flex;
+  justify-content: center; /* Mengatur item tim agar berada di tengah-tengah */
 }
 
-.team-container .team-item .team-item-inner img:hover {
-  transform: scale(1.1);
+.team-section .team-container .team-row .team-item {
+  flex: 0 0 50%; /* Mengatur lebar item tim agar bersebelahan dengan jarak 20px di antara mereka */
+  max-width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
 }
 
-.team-container .team-item .team-item-inner {
+.team-section .team-container .team-row .team-item .team-item-inner {
+  background-color: #ccc;
   padding: 15px;
+  box-shadow: 0 0 10px #000;
 }
 
-.team-container .team-item .team-item-inner h4 {
+.team-section .team-container .team-row .team-item .team-item-inner img {
+  width: 300px;
+  box-shadow: 0 0 10px #000;
+  margin-top: -40px;
+  transition: all .5s ease;
+}
+
+.team-section .team-container .team-row .team-item .team-item-inner:hover img {
+  transform: scale(0.95);
+}
+
+.team-section .team-container .team-row .team-item .team-item-inner h4 {
   font-size: 16px;
   color: #000;
   font-weight: 500;
   margin: 20px 0 5px;
-}
-.team-container .team-item .team-item-inner p {
-  color: #555;
-  font-size: 16px;
-  margin: 0 0 10px;
+  text-align: center;
 }
 
-.team-container .team-item .team-item-inner .social-icons {
+.team-section .team-container .team-row .team-item .team-item-inner p {
+  color: #2b2b2b;
+  font-size: 16px;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.team-section .team-container .team-row .team-item .team-item-inner .social-links {
   text-align: center;
   padding: 10px 0;
 }
 
-.team-container .team-item .team-item-inner .social-icons a {
+.team-section .team-container .team-row .team-item .team-item-inner .social-links a {
   display: inline-block;
   margin: 0 3px;
   text-decoration: none;
 }
 
-.team-container .team-item .team-item-inner .social-icons a i {
+.team-section .team-container .team-row .team-item .team-item-inner .social-links a i {
   height: 32px;
   width: 32px;
   border: 1px solid #634a32;
@@ -863,11 +878,10 @@ header {
   line-height: 32px;
   color: #634a32;
   border-radius: 50%;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
 }
 
-.team-container .team-item .team-item-inner .social-icons a:hover i {
-  color: #fff; /* Ubah warna ikon menjadi putih saat dihover */
-  background-color: #634a32; /* Ubah warna latar belakang ikon saat dihover */
-  border-color: #634a32; /* Ubah warna border ikon saat dihover */
+.team-section .team-container .team-row .team-item .team-item-inner .social-links a:hover i {
+  background-color: #634a32;
+  color: #fff;
 }
