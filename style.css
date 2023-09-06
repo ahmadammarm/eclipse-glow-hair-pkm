@@ -800,43 +800,49 @@ header {
 
 /* Team CSS */
 .team-section {
-  padding: 80px 0 80px;
+  padding: 80px 0;
 }
+
 .team-section .team-container {
   margin: auto;
 }
+
 .team-section .team-container .team-title-inner h2 {
   text-align: center;
   font-size: 3rem;
-  padding-bottom: 6rem;
-  padding-top: 2rem;
+  margin-bottom: 7rem;
   cursor: default;
+  padding-top: 3rem;
 }
+
 .team-section .team-container .team-row {
   display: flex;
-  justify-content: center; /* Mengatur item tim agar berada di tengah-tengah */
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  justify-content: center;
 }
 
 .team-section .team-container .team-row .team-item {
-  flex: 0 0 50%; /* Mengatur lebar item tim agar bersebelahan dengan jarak 20px di antara mereka */
-  max-width: 50%;
+  flex: 0 0 calc(50% - 20px); /* Adjusted for margin */
+  max-width: calc(50% - 20px);
+  margin: 10px; /* Add margin between items */
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 25px;
 }
 
 .team-section .team-container .team-row .team-item .team-item-inner {
   background-color: #ccc;
   padding: 15px;
   box-shadow: 0 0 10px #000;
+  text-align: center; /* Center text for mobile */
 }
 
 .team-section .team-container .team-row .team-item .team-item-inner img {
-  width: 300px;
+  width: 250px;
+  height: 250px;
   box-shadow: 0 0 10px #000;
   margin-top: -40px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .team-section .team-container .team-row .team-item .team-item-inner:hover img {
@@ -848,14 +854,12 @@ header {
   color: #000;
   font-weight: 500;
   margin: 20px 0 5px;
-  text-align: center;
 }
 
 .team-section .team-container .team-row .team-item .team-item-inner p {
   color: #2b2b2b;
   font-size: 16px;
   margin: 0 0 10px;
-  text-align: center;
 }
 
 .team-section .team-container .team-row .team-item .team-item-inner .social-links {
@@ -878,10 +882,126 @@ header {
   line-height: 32px;
   color: #634a32;
   border-radius: 50%;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .team-section .team-container .team-row .team-item .team-item-inner .social-links a:hover i {
   background-color: #634a32;
   color: #fff;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 767px) {
+  .team-section .team-container .team-row .team-item {
+    flex: 0 0 100%; /* Full width on mobile */
+    max-width: 100%;
+  }
+
+  .team-section .team-container .team-row .team-item #ketua {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+}
+
+
+/* Stil default untuk perangkat selain mobile */
+.team-section-2 {
+  padding: 80px 0 80px;
+}
+
+.team-section-2 .team-container-2 .team-title-inner-2 h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 6rem;
+  padding-top: 2rem;
+  cursor: default;
+}
+
+.team-section-2 .team-container-2 .team-row-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.team-section-2 .team-container-2 .team-row-2 .team-item-2 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.team-section-2 .team-container-2 .team-row-2 .team-item-2 .team-item-inner-2 {
+  background-color: #ccc;
+  padding: 15px;
+  box-shadow: 0 0 10px #000;
+}
+
+.team-section-2 .team-container-2 .team-row-2 .team-item-2 .team-item-inner-2 img {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 10px #000;
+  margin-top: -40px;
+  transition: all .5s ease;
+}
+
+.team-section-2 .team-container-2 .team-row-2 .team-item-2 .team-item-inner-2:hover img {
+  transform: scale(0.95);
+}
+
+.team-section-2 .team-container-2 .team-row-2 .team-item-2 .team-item-inner-2 h4 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  margin: 20px 0 5px;
+  text-align: center;
+}
+
+.team-section-2 .team-container-2 .team-row-2 .team-item-2 .team-item-inner-2 p {
+  color: #2b2b2b;
+  font-size: 16px;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.team-section-2 .team-container-2 .team-row-2 .team-item-2 .team-item-inner-2 .social-links-2 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.team-section-2 .team-container-2 .team-row-2 .team-item-2 .team-item-inner-2 .social-links-2 a {
+  display: inline-block;
+  margin: 0 3px;
+  text-decoration: none;
+}
+
+.team-section-2 .team-container-2 .team-row-2 .team-item-2 .team-item-inner-2 .social-links-2 a i {
+  height: 32px;
+  width: 32px;
+  border: 1px solid #634a32;
+  display: block;
+  text-align: center;
+  line-height: 32px;
+  color: #634a32;
+  border-radius: 50%;
+  transition: all .5s ease;
+}
+
+.team-section-2 .team-container-2 .team-row-2 .team-item-2 .team-item-inner-2 .social-links-2 a:hover i {
+  background-color: #634a32;
+  color: #fff;
+}
+
+/* Media query untuk perangkat mobile dengan lebar maksimum 768px */
+@media screen and (max-width: 768px) {
+  .team-section-2 .team-container-2 .team-row-2 {
+    flex-wrap: wrap; /* Mengatur item tim agar wrap ke bawah pada perangkat mobile */
+    justify-content: flex-start; /* Mengatur item tim agar dimulai dari kiri pada perangkat mobile */
+  }
+
+  .team-section-2 .team-container-2 .team-row-2 .team-item-2 {
+    flex-basis: 100%; /* Mengatur lebar item tim menjadi 50% pada perangkat mobile */
+    max-width: 100%;
+    margin-bottom: 4rem;
+  }
 }
