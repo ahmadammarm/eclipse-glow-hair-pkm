@@ -51,6 +51,12 @@ body::-webkit-scrollbar-corner {
   background-color: #f1f1f1;
 }
 
+@media screen and (max-width: 767px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87)), url("img/home.jpeg");
   background-size: cover;
