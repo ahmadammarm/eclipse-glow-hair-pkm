@@ -1111,42 +1111,27 @@ header {
   background-color: #000;
 }
 
-@media screen and (max-width: 768px) {
-  .contact {
-    padding: 4rem 7% 1.4rem; /* Mengurangi padding pada tampilan mobile */
-    padding-bottom: 5rem; /* Mengurangi padding bawah pada tampilan mobile */
-  }
-
-  .contact .row {
-    flex-direction: column; /* Mengubah tata letak menjadi satu kolom pada tampilan mobile */
-    border: none; /* Menghapus border pada tampilan mobile */
-    background-color: transparent; /* Menghapus background pada tampilan mobile */
-  }
-
+@media (max-width: 768px) {
   .contact h2 {
-    font-size: 2rem; /* Mengubah ukuran font pada tampilan mobile */
+    font-size: 2.5rem;
+    padding-top: 3rem;
+  }
+  .contact .row {
+    flex-wrap: wrap;
   }
 
-  .contact .row .map,
+  .contact .row .map {
+    height: 30rem;
+  }
+
   .contact .row form {
-    flex: none; /* Menghapus flex untuk memungkinkan lebar konten mengisi layar penuh */
-    width: 100%; /* Mengisi lebar penuh pada tampilan mobile */
+    padding-top: 0;
   }
-
-  .contact .row form {
-    padding: 2rem; /* Mengurangi padding pada formulir pada tampilan mobile */
-  }
-
-  .contact .row form .input-group {
-    padding-left: 1; /* Menghapus padding kiri pada input-group pada tampilan mobile */
-  }
-
   .contact .row form .input-group i {
-    font-size: 40px; /* Mengubah ukuran ikon pada tampilan mobile */
+    font-size: 40px;
   }
 
   .contact .row form .input-group a {
-    padding: 1rem; /* Mengurangi padding pada tampilan mobile */
-    font-size: 1.3rem; /* Mengubah ukuran font pada tampilan mobile */
+    font-size: 20px;
   }
 }
