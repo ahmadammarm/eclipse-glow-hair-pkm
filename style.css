@@ -1013,24 +1013,140 @@ header {
   }
 }
 
-.contact-section {
+
+/* Contact Section */
+
+.contact {
+  padding: 8rem 7% 1.4rem;
   background-color: rgb(8, 8, 8);
+  padding-bottom: 10rem;
+}
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+  border-radius: 5px;
+  border: 3px solid #634a32;
 }
 
-.contact-section h2 {
-  text-align: center;
+.contact h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   color: #fff;
-  font-size: 3rem;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
 }
 
-.contact-section .row {
-  flex: 0 0 50%;
-  max-width: 50%;
+.contact h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 60px;
-  margin: auto;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 3px solid #634a32;
+  padding-left: 2rem;
+  border-radius: 1rem;
+}
+
+.contact .row form .input-group i {
+  font-size: 60px;
+  color: #ccc;
+}
+
+.contact .row form .input-group a {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact .row form #wa {
+  transition: all .5s ease;
+}
+
+.contact .row form #wa i {
+  color: #25d366;
+}
+
+.contact .row form #wa a {
+  color: #25d366;
+}
+
+.contact .row form #wa:hover {
+  background-color: #000;
+}
+
+.contact .row form #ig {
+  transition: all .5s ease;
+}
+
+.contact .row form #ig i {
+  color: #bc2a8d;
+}
+
+.contact .row form #ig a {
+  color: #bc2a8d;
+}
+
+.contact .row form #ig:hover {
+  background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 4rem 7% 1.4rem; /* Mengurangi padding pada tampilan mobile */
+    padding-bottom: 5rem; /* Mengurangi padding bawah pada tampilan mobile */
+  }
+
+  .contact .row {
+    flex-direction: column; /* Mengubah tata letak menjadi satu kolom pada tampilan mobile */
+    border: none; /* Menghapus border pada tampilan mobile */
+    background-color: transparent; /* Menghapus background pada tampilan mobile */
+  }
+
+  .contact h2 {
+    font-size: 2rem; /* Mengubah ukuran font pada tampilan mobile */
+  }
+
+  .contact .row .map,
+  .contact .row form {
+    flex: none; /* Menghapus flex untuk memungkinkan lebar konten mengisi layar penuh */
+    width: 100%; /* Mengisi lebar penuh pada tampilan mobile */
+  }
+
+  .contact .row form {
+    padding: 2rem; /* Mengurangi padding pada formulir pada tampilan mobile */
+  }
+
+  .contact .row form .input-group {
+    padding-left: 1; /* Menghapus padding kiri pada input-group pada tampilan mobile */
+  }
+
+  .contact .row form .input-group i {
+    font-size: 40px; /* Mengubah ukuran ikon pada tampilan mobile */
+  }
+
+  .contact .row form .input-group a {
+    padding: 1rem; /* Mengurangi padding pada tampilan mobile */
+    font-size: 1.3rem; /* Mengubah ukuran font pada tampilan mobile */
+  }
 }
