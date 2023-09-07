@@ -935,6 +935,7 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 25px;
+  padding-bottom: 10rem;
 }
 
 .team-section-2 .team-container-2 .team-row-2 .team-item-2 .team-item-inner-2 {
@@ -1010,4 +1011,26 @@ header {
     max-width: 100%;
     margin-bottom: 4rem;
   }
+}
+
+.contact-section {
+  background-color: rgb(8, 8, 8);
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.contact-section .row {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  margin: auto;
 }
