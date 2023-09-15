@@ -873,6 +873,10 @@ header {
   padding: 10px 0;
 }
 
+.team-section .team-container .team-row .team-item .team-item-inner #dospem {
+  display: none;
+}
+
 .team-section .team-container .team-row .team-item .team-item-inner .social-links a {
   display: inline-block;
   margin: 0 3px;
