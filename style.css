@@ -58,7 +58,7 @@ body::-webkit-scrollbar-corner {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87)), url("img/home.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87)), url("img/mockup-1.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -89,7 +89,7 @@ header {
 }
 
 .navbar .box-navbar .logo img {
-  width: 40px;
+  width: 50px;
   transition: transform 0.6s ease-in-out;
 }
 .navbar .box-navbar .logo img:hover {
