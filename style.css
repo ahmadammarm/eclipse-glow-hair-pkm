@@ -496,6 +496,7 @@ header {
 .menu h2 {
   text-align: center;
   font-size: 3rem;
+  padding-top: 4rem;
 }
 .menu p {
   text-align: center;
@@ -520,6 +521,7 @@ header {
   flex-wrap: wrap;
   margin-top: 5rem;
   justify-content: center;
+  padding-bottom: 4rem;
 }
 
 .menu .row .menu-card {
