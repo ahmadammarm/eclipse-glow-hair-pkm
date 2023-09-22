@@ -147,6 +147,7 @@ header {
     transform: translateX(50%);
     transition: all 0.3s ease;
     background-color: #9b7653;
+    margin-top: 1rem;
   }
 
   .navbar .box-navbar .menu.menu-active {
